@@ -24,6 +24,9 @@ var booleano = false;
 // Variable tipo array (matriz)
 var matriz = ['Elemento 1', 2, 'Elemento 3'];
 
+// Variable tipo Objeto
+var objeto = { "name":"John", "age":31, "city":"New York" };
+
 /* -------------------------------------------------------------------------------------------------
 Operadores Aritméticos
   suma           -> +
