@@ -1,3 +1,5 @@
-// Comentarios
-//    Comentarios de línea: //
-//    Comentarios de bloque: /**/
+/* -------------------------------------------------------------------------------------------------
+Comentarios: En JS existen dos tipos de comentarios
+  Comentarios de línea: //
+  Comentarios de bloque: /**/
+------------------------------------------------------------------------------------------------- */
