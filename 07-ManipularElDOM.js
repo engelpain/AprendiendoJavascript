@@ -40,8 +40,3 @@ querySelectorAll()
 var todosElementosDiv = document.querySelectorAll("p");
 var todosElementosId = document.querySelectorAll("#id");
 var todosElementosClase = document.querySelectorAll(".clase");
-
-console.log(todosElementosClase);
-//document.querySelectorAll();
-
-//ids.classList.add("landing");
