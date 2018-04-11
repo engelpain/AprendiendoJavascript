@@ -39,7 +39,7 @@ verdadero y el botón como falso, el evento que disparado por el div ocurrirá p
 botón.
   * true, false
 ------------------------------------------------------------------------------------------------- */
-document.getElementById('test').addEventListener('click', funcion_validar, true);
+document.getElementById('test').addEventListener('click', function(){}, true);
 
 
 /* -------------------------------------------------------------------------------------------------
