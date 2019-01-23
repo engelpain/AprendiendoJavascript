@@ -46,3 +46,6 @@ var objetos = {
     return 'El ' + this.nombre + ' tiene ' + this.edad + ' años.';
   }
 };
+
+// Constante, mantiene su valor. Las constantes deben ser declaradas con mayúsculas sostenidas
+const CONSTANTE = "valor";
