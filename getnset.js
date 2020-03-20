@@ -1,4 +1,4 @@
-/* -------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------------------------------------
 Getters
   Los son funciones con las cuales se pueden consultar los atributos de un objeto, las buenas
   prácticas de programación orientada a objetos exigen que solo se pueda acceder a los atributos de
@@ -7,15 +7,15 @@ Getters
 Setters
   Los son funciones con las cuales se pueden establecer los valores de los atributos de un objeto,
   las buenas prácticas de programación orientada a objetos exigen que solo se puedan establecer los
-  valores de los a través de su método set. 
-------------------------------------------------------------------------------------------------- */
+  valores de los a través de su método set.
+--------------------------------------------------------------------------------------------------------------------- */
 (function(){
   var objetoPrueba = {
     // Atributos
     nombre: "Ezio",
     apellido: "Auditore",
     nacimiento: 1459,
-    
+
     // Método get
     get darNombre(){
       return this.nombre;

@@ -1,13 +1,11 @@
-/* -------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------------------------------------
 Estructuras de Repetición (Ciclos repetitivos)
   - WHILE: Utilizada para repetir procesos hasta que se cumpla la condición.
 
   while (condición) {
     # Acción a repetir
   }
-------------------------------------------------------------------------------------------------- */
-
-console.log("WHILE");
+--------------------------------------------------------------------------------------------------------------------- */
 var contador = 0;
 while (contador < 5) {
   contador++;
@@ -21,7 +19,7 @@ while (contador < 5) {
   // 4
 }
 
-/* -------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------------------------------------
 Estructuras de Repetición (Ciclos repetitivos)
   - DO WHILE: Utilizada para repetir procesos hasta que se cumpla la condición.
     Se diferencia de WHILE porque este se cumple al menos una vez así no se cumpla con la condición.
@@ -29,9 +27,7 @@ Estructuras de Repetición (Ciclos repetitivos)
   do {
     # Acción a repetir
   } while (condición);
-------------------------------------------------------------------------------------------------- */
-
-console.log("DOWHILE");
+--------------------------------------------------------------------------------------------------------------------- */
 var contador = 11;
 do {
   contador++;
@@ -44,16 +40,14 @@ do {
 } while (contador < 10);
 
 
-/* -------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------------------------------------
 Estructuras de Repetición (Ciclos repetitivos)
   - FOR: Utilizada para repetir procesos hasta que se se llegue a un número determinado de veces.
 
 for (var i = 0; i < variable; i++) {
     # Acción a repetir
   }
-------------------------------------------------------------------------------------------------- */
-
-console.log("FOR");
+--------------------------------------------------------------------------------------------------------------------- */
 for (var i = 5; i > 0; i--) {
   console.log(i);
 }
