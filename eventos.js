@@ -55,3 +55,12 @@ Eventos por tiempo
 --------------------------------------------------------------------------------------------------------------------- */
 setTimeout(function() {console.log('Hola mundo');}, 5000);
 setTimeout(() => console.log("hola mundo"), 2000);
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Eventos para todos
+  Para recorrer otorgar un evento a todos los elementos de un mismo tipo o clase
+--------------------------------------------------------------------------------------------------------------------- */
+document.querySelectorAll('.class').forEach(item => {
+  item.addEventListener('click', function(){})
+});
