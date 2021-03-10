@@ -14,3 +14,19 @@ var template =`
 `;
   document.getElementById("sandbox").innerHTML = template;
 })();
+
+
+// --------------------------------------
+// Ejemplo práctico
+//  - Su target será <div id="app"></div>
+// --------------------------------------
+const $app = document.getElementById("app");
+const Avatar = params => {
+  const src = `https://randomuser.me/api/portraits/women/${params.id}.jpg`;
+  return `<picture>
+    <img src="${src}" alt="${params.name}" />
+    ${params.name}
+  </picture>`;
+};
+$app.innerHTML += Avatar({ id: 5, name: "Andrea" })
+$app.innerHTML += Avatar({ id: 6, name: "Taurina" })
