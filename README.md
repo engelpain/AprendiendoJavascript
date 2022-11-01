@@ -1,10 +1,11 @@
-## Aprendiendo Javascript
+# Aprendiendo Javascript
 Centro Nacional de Desarrollo e Investigación de Tecnologías Libres (CENDITEL) <br>
 [CENDITEL](https://www.cenditel.gob.ve/), Mérida - Venezuela<br>
 Dirección de Desarrollo<br>
 Autor: [Ing. Angelo Osorio](https://twitter.com/Engel_PAIN)<br>
-Fecha de Elaboración: 20-02-2018 (dd,mm,aaaa)
+Fecha de Elaboración: 1-11-2022 (dd,mm,aaaa)
 
+## Lista de contenidos
 0. [Comentarios en JS](./comentarios.js)
 1. [Variables](./variables.js)
 1. [Cadenas de caracteres](./cadenas.js)
