@@ -50,11 +50,10 @@ estandar.
 const saludo = () => console.log("Hola mundo");
 
 // También se pueden realizar funciones más complejas
-const cambiarLetra2 = texto => {
-    let qweasd = texto.toUpperCase();
-    console.log(qweasd);
+const cambiarLetra = texto => {
+    let textoTransformado = texto.toUpperCase();
+    console.log(textoTransformado);
 };
-
 
 /* ---------------------------------------------------------------------------------------------------------------------
 Funciones útiles
