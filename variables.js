@@ -33,6 +33,9 @@ var booleano = false;
 // Variable tipo array (matrices)
 var matriz = ['Elemento 1', 2, 'Elemento 3'];
 
+// Expresión regular
+var expresion = /[0-9]/;
+
 // Función contenida en una variable
 var funcion = function function_name(){};
 
