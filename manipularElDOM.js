@@ -11,39 +11,47 @@ Funciones para elegir elementos:
 getElementsByTagName('tag')
   - Selecciona todos los elementos que sean de ese tipo de etiqueta
 --------------------------------------------------------------------------------------------------------------------- */
-var divs = document.getElementsByTagName('div');
+const divs = document.getElementsByTagName('div');
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
 getElementById('nombreId')
   - Selecciona un elemento con un ID en específico
 --------------------------------------------------------------------------------------------------------------------- */
-var ids = document.getElementById("id");
+const ids = document.getElementById("id");
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
 getElementsByClassName('nombreClase')
   - Selecciona todos los elementos que tengan esa clase
 --------------------------------------------------------------------------------------------------------------------- */
-var clases = document.getElementsByClassName('clase');
+const clases = document.getElementsByClassName('clase');
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
 querySelector()
-  - Selecciona el primer elemento que sea del tipo de etiqueta, id o clase referido.
+  - Selecciona el primer elemento que sea del tipo de etiqueta, id o clase referido. También se puede escribir elementos
+  con su jerarquía.
 --------------------------------------------------------------------------------------------------------------------- */
-var primerElementoDiv = document.querySelector("div");
-var primerElementoId = document.querySelector("#id");
-var primerElementoClase = document.querySelector(".clase");
+const primerElementoDiv = document.querySelector("div");
+const primerElementoId = document.querySelector("#id");
+const primerElementoClase = document.querySelector(".clase");
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
 querySelectorAll()
   - Selecciona el primer elemento que sea del tipo de etiqueta, id o clase referido.
 --------------------------------------------------------------------------------------------------------------------- */
-var todosElementosDiv = document.querySelectorAll("div");
-var todosElementosId = document.querySelectorAll("#id");
-var todosElementosClase = document.querySelectorAll(".clase");
+const todosElementosDiv = document.querySelectorAll("div");
+const todosElementosId = document.querySelectorAll("#id");
+const todosElementosClase = document.querySelectorAll(".clase");
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+parentElement
+  - Utilizado para seleccionar al elemento padre de otro elemento seleccionado 
+--------------------------------------------------------------------------------------------------------------------- */
+const padreDeTodos = document.querySelector("main").parentElement; // body
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
@@ -58,11 +66,13 @@ document.getElementById("sandbox").innerHTML = 'Texto';
 
 
 /* ---------------------------------------------------------------------------------------------------------------------
-Elementos en el DOM
+Añadir elementos en el DOM
   createElement
   padre.appendChild(elementoHijo);
 --------------------------------------------------------------------------------------------------------------------- */
-
+// Crea un nuevo elemento párrafo, y lo agrega al final del cuerpo del documento
+let p = document.createElement("p");
+document.body.appendChild(p);
 
 /* ---------------------------------------------------------------------------------------------------------------------
 Atributos para elementos en el DOM
@@ -82,7 +92,6 @@ Clases para elementos en el DOMs
 Atajos para funciones
   Se pueden usar "atajos" para usar las funciones de JS, en especial las usadas con las que manipulan el DOM.
 --------------------------------------------------------------------------------------------------------------------- */
-
 // 1. Shortcut para llamar a la función console.log() de manera más corta
 const log = console.log;
 log(value);
