@@ -1,21 +1,30 @@
 /* ---------------------------------------------------------------------------------------------------------------------
 Promesas
-  Son bloques de código que se ejecutarán asincronamente devolviento un valor dependiendo del
-  estado en el que se encuentren, el valor no necesariamente conocido en el momento que es creada
-  la promesa.
-  Las promesas puede estar en 3 estados: pendiente, cumplida o rechazada.
+  - Son bloques de código que se ejecutarán asíncronamente, o coloquialmente "van a su propio ritmo", esto porque no
+  interfieren con la ejecución del código que le precede.
+  - Las promesas puede estar en 3 estados: pendiente, cumplida o rechazada, dependiendo del estado en el que se
+  encuentre, y el valor no necesariamente declarado en el momento que la promesa es creada.
 --------------------------------------------------------------------------------------------------------------------- */
 // Se define la promesa en una variable
-let promesa = new Promise(function(resolve, reject) {
-
+const promesa = new Promise(function(resolve, reject) {
   // Se declara el valor de la promesa
   setTimeout(resolve, 4000, "Todo bien");
-
 });
 
-// Se solicita el resultado a la promesa
-promesa.then(function(response){
-  console.log(response)
-}, function(error){
-  console.log(error);
-});
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Respuestas de la promesa
+   - Existen 3 métodos para consultar la respuesta de una promesa:
+     - finally: devuelta cuando la promesa se termina independientemente de la respuesta.
+     - then: devuelta cuando la promesa se termina con éxito.
+     - catch: devuelta cuando la promesa se termina en fallo.
+--------------------------------------------------------------------------------------------------------------------- */
+
+// finally: se dispara al terminar una promesa sin importar el resultado 
+promesa.finally(response => { console.log("finalizó la promesa", response) });
+
+// then: se dispara al terminar una promesa con éxito
+promesa.then(response => { console.log("finalizó con éxito", response) });
+
+// then: se dispara al fracasar una promesa
+promesa.catch(error => { console.log("fracazó la promesa", error) });
