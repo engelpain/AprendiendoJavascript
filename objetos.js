@@ -9,7 +9,7 @@ Setters
   las buenas prácticas de programación orientada a objetos exigen que solo se puedan establecer los
   valores de los a través de su método set.
 --------------------------------------------------------------------------------------------------------------------- */
-var objetoPrueba = {
+let objetoPrueba = {
   // Atributos
   nombre: "Ezio",
   apellido: "Auditore",
@@ -45,10 +45,12 @@ objetoPrueba.apellido // Auditore
 objetoPrueba['nacimiento'] // 1459
 
 /* ---------------------------------------------------------------------------------------------------------------------
-Destructured Assignment
+Desestructuración (Destructured Assignment)
   Es un método usado para consultar los atributos de un objeto y a la vez asignarlos a una variable con ese mismo nombre
 --------------------------------------------------------------------------------------------------------------------- */
-let {nacimiento} = objetoPrueba;
+let { nombre, apellido, nacimiento } = objetoPrueba;
+console.log(nombre); // Ezio
+console.log(apellido); // Auditore
 console.log(nacimiento); // 1459
 
 /* ---------------------------------------------------------------------------------------------------------------------
